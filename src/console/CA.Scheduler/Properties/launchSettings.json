@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "CA.Scheduler": {
+      "commandName": "Project"
+    },
+    "Docker": {
+      "commandName": "Docker"
+    }
+  }
+}

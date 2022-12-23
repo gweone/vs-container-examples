@@ -1,0 +1,36 @@
+version: '3.4'
+
+services:
+  ca.aspnetcore:
+    image: ${DOCKER_REGISTRY-}caaspnetcore
+    build:
+      context: .
+      dockerfile: src\ui\CA.AspNetCore\Dockerfile
+
+  ca.mvc:
+    image: ${DOCKER_REGISTRY-}camvc
+    build:
+      context: .\src\ui\CA.Mvc
+      dockerfile: Dockerfile
+
+
+  ca.schedulernet:
+    image: ${DOCKER_REGISTRY-}caschedulernet
+    build:
+      context: .\src\console\CA.SchedulerNet
+      dockerfile: Dockerfile
+
+
+  ca.scheduler:
+    image: ${DOCKER_REGISTRY-}cascheduler
+    build:
+      context: .
+      dockerfile: src\console\CA.Scheduler\Dockerfile
+  
+  #db:
+  #  image: "mcr.microsoft.com/mssql/server:2022-latest"
+  #  ports:
+  #      - "1433:1433"
+  #  environment:
+  #      SA_PASSWORD: "P@ssW0rd"
+  #      ACCEPT_EULA: "Y"
