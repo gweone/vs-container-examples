@@ -54,8 +54,8 @@
 
 ### Docker-Compose
 1. Source 
-	1.1 Build from DockerFile
-	1.2 Parameterize Image
+    - Build from DockerFile
+	- Parameterize Image
 2. Mount Volume
 3. Custom EntryPoint
 
