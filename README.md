@@ -63,4 +63,4 @@
 ### Local Docker Registry
 docker run -d -p 11000:5000 --restart=always --name registry.local -v D:/Docker/Registry:/var/lib/registry registry:2
 
-# Consolution
+# Conclution
