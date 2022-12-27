@@ -17,9 +17,15 @@
 3. Container
 ![Container Based](files/container-based.png)
 
-### Container Engine
+### Container Type
 1. Linux Container
 2. Windows Container
+
+### Container Engine
+1. Docker
+2. Podman
+3. etc
+
 
 ## Setup Environment (Windows)
 1. [https://docs.docker.com/desktop/install/windows-install/](https://docs.docker.com/desktop/install/windows-install/)
@@ -45,7 +51,8 @@
 ### Feature
 1. Logging
 2. Installation/Configuration Wizard (optional)
-3. Path Resolver (Linux vs Windows)
+3. Read parameter from environtment variable
+4. Path Resolver (Linux vs Windows)
 
 ### DockerFile
 1. Create an Image
@@ -63,4 +70,6 @@
 ### Local Docker Registry
 docker run -d -p 11000:5000 --restart=always --name registry.local -v D:/Docker/Registry:/var/lib/registry registry:2
 
-# Conclution
+# Summary
+1. DockerFile for create image
+2. Docker Compose for run images with parameterize
